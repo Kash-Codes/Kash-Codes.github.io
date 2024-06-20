@@ -24,24 +24,30 @@ html {
 }
 
 
+.mobile-text-container {
+    visibility: hidden;
+}
 .container {
-  position:static;
-  width: 100%;
-  overflow: hidden;
-}
+    position:static;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  .scrolling-text .scrolling-text-content {
+    color: #fff;
+    font-size: 320px;
+    white-space: nowrap;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    line-height: 1em;
+    margin: 0;
+    text-shadow: 0 0 30px #555555, 0 0 40px #111111;
+  }
 
-.scrolling-text {
-  display: inline-block;
-  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-  will-change: transform;
-  backface-visibility: hidden;
-}
 
-.scrolling-text .scrolling-text-content {
-  color: #fff;
-  font-size: 320px;
-  white-space: nowrap;
-  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-  line-height: 1em;
-  margin: 0;
-}
