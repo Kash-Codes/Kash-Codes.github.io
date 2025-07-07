@@ -5,7 +5,7 @@
 }
 
 .headshot img {
-    border-radius: 25%;
+    border-radius: 20%;
     height: 500px;
 }
 
@@ -14,7 +14,8 @@ body {
 }
 
 .about-title-text {
-    font-size: 30px;
+    font-size: 24px;
+    margin: 10px;
 }
 
 body,
@@ -42,7 +43,7 @@ html {
   
   .scrolling-text .scrolling-text-content {
     color: #fff;
-    font-size: 320px;
+    font-size: 240px;
     white-space: nowrap;
     transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
     line-height: 1em;
