@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+    <style>
+        #tints {
+            display:none;
+        }
+        #tint1,#tint2,#tint3 {
+            border-radius: 50%;
+        }
+        
+        .img_container {
+            border: 5px solid black;
+        }
+        
+    </style>
+
+<body>
+    <div class="img_container" id="imgContainer" height="500px" width="500px">
+        <img id="glasses"  width="500px" border ="1px" src="glasses/715_source_1598559903.webp">
+        <div id="infoDiv">
+            <span id="info" height="120px">These glasses are so cool</span>
+                <div  id="tints">
+                
+                <img id = "tint1" src="glasses/copper.png">
+                <img id = "tint2" src="glasses/grey.png">
+                <img id = "tint3" src="glasses/GGT.png">
+                
+                </div>
+            
+        </div>
+    </div>
+</body>
+
+    <script>
+    var image = document.getElementById("glasses");
+    var tints = document.getElementById("tints");
+    var cont = document.getElementById("imgContainer");
+        var info = document.getElementById("info");
+        var t1 = document.getElementById("tint1");
+        var t2 = document.getElementById("tint2");
+        var t3 = document.getElementById("tint3");
+    cont.onmouseover = function() {
+        tints.style.display = "block";
+        info.style.display = "none";
+    }
+    cont.onmouseout = function() {
+        tints.style.display = "none";
+        info.style.display = "block";
+    }
+    t1.onmouseover = function() {
+        image.src = "glasses/tortoise-gradientcopper__69877.1586556368.webp";
+        console.log("Tint1");
+    }
+    t2.onmouseover = function() {
+        image.src = "glasses/matte-solidgray__79833.1586556368.webp";
+        console.log("Tint2");
+    }
+    t3.onmouseover = function() {
+        image.src = "glasses/715_source_1598559903.webp";
+        console.log("Tint3");
+    }
+    </script>
+    
+    
+</html>
