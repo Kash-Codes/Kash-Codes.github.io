@@ -48,7 +48,7 @@ searchButton.addEventListener('click', updateTerm)
 
 var input = document.getElementById("searchInput");
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keydown", function(event) {
     if(event.key === "Enter"){
         event.preventDefault();
         searchButton.click();
