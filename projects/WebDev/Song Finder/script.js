@@ -46,6 +46,15 @@ const updateTerm = () => {
 const searchButton = document.querySelector('button')
 searchButton.addEventListener('click', updateTerm)
 
+var input = document.getElementById("searchInput");
+
+input.addEventListener("keyup", function(event) {
+    if(event.key === "Enter"){
+        event.preventDefault();
+        searchButton.click();
+    }
+})
+
 document.addEventListener('play', event => {
     const audio = document.getElementsByTagName('audio');
     for(let i=0; i< audio.length; i++){
